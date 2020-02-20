@@ -10419,12 +10419,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u"/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u"/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10u"/>
 <part name="U3" library="drive_ctrl" deviceset="AP2210-5K" device="SOT-23-5" package3d_urn="urn:adsk.eagle:package:16996618/1"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100p"/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="J1" library="drive_ctrl" deviceset="4-PIN_2MM-*" device="V"/>
 <part name="J2" library="drive_ctrl" deviceset="4-PIN_2MM-*" device="V"/>
@@ -10452,12 +10452,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="JP2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1" value="RST"/>
 <part name="SUPPLY25" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u"/>
 <part name="SUPPLY26" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="SUPPLY27" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="F1" library="RoboJackets-Fuses" deviceset="CHIP_FUSE" device="1206" value="3A"/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
+<part name="SUPPLY28" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u"/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -10468,7 +10472,7 @@ limits current to 3.6A before fault condition is reached</text>
 <text x="121.92" y="167.64" size="2.54" layer="97">Input/Daisy Chain Connectors</text>
 <text x="63.5" y="111.76" size="2.54" layer="97">DC Motor Driver</text>
 <text x="218.44" y="167.64" size="2.54" layer="97">Hall Effect Sensor</text>
-<text x="220.98" y="132.08" size="2.54" layer="97">Motor Plug</text>
+<text x="220.98" y="127" size="2.54" layer="97">Motor Plug</text>
 <text x="53.34" y="50.8" size="2.54" layer="97">ATTiny84</text>
 <text x="208.28" y="78.74" size="2.54" layer="97">Debugging outputs</text>
 <text x="226.06" y="40.64" size="1.27" layer="97">Test point on Debug_1 can be used 
@@ -10476,20 +10480,23 @@ for software serial output</text>
 <text x="154.94" y="83.82" size="2.54" layer="97">Power Indicator</text>
 <text x="106.68" y="50.8" size="1.778" layer="97">Jumper and pull-up 
 for on-board reset</text>
+<text x="25.4" y="76.2" size="1.778" layer="97">NOTE:  All capacitors rated 25V or more</text>
+<text x="213.36" y="139.7" size="1.778" layer="97">Detects if wheel is at a 0 position by 
+detecting embedded magnet</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="60.96" y="30.48" smashed="yes">
 <attribute name="NAME" x="40.64" y="49.022" size="1.778" layer="95"/>
 </instance>
-<instance part="JP1" gate="A" x="233.68" y="114.3" smashed="yes">
-<attribute name="NAME" x="227.33" y="127.635" size="1.778" layer="95"/>
-<attribute name="VALUE" x="227.33" y="104.14" size="1.778" layer="96"/>
+<instance part="JP1" gate="A" x="233.68" y="109.22" smashed="yes">
+<attribute name="NAME" x="227.33" y="122.555" size="1.778" layer="95"/>
+<attribute name="VALUE" x="227.33" y="99.06" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY1" gate="+5V" x="205.74" y="124.46" smashed="yes">
-<attribute name="VALUE" x="203.835" y="127.635" size="1.778" layer="96"/>
+<instance part="SUPPLY1" gate="+5V" x="205.74" y="119.38" smashed="yes">
+<attribute name="VALUE" x="203.835" y="122.555" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY2" gate="GND" x="205.74" y="109.22" smashed="yes">
-<attribute name="VALUE" x="203.835" y="106.045" size="1.778" layer="96"/>
+<instance part="SUPPLY2" gate="GND" x="205.74" y="104.14" smashed="yes">
+<attribute name="VALUE" x="203.835" y="100.965" size="1.778" layer="96"/>
 </instance>
 <instance part="U2" gate="G$1" x="60.96" y="96.52" smashed="yes">
 <attribute name="NAME" x="50.8" y="106.68" size="1.778" layer="95"/>
@@ -10561,15 +10568,15 @@ for on-board reset</text>
 <attribute name="NAME" x="167.64" y="160.02" size="1.778" layer="95" font="vector" rot="MR0" align="top-left"/>
 <attribute name="VALUE" x="167.64" y="142.24" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="J3" gate="J$1" x="231.14" y="149.86" smashed="yes" rot="R180">
-<attribute name="VALUE" x="241.3" y="157.226" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="233.68" y="144.272" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="J3" gate="J$1" x="231.14" y="154.94" smashed="yes" rot="R180">
+<attribute name="VALUE" x="241.3" y="162.306" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="233.68" y="149.352" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="SUPPLY14" gate="GND" x="210.82" y="144.78" smashed="yes">
-<attribute name="VALUE" x="208.915" y="141.605" size="1.778" layer="96"/>
+<instance part="SUPPLY14" gate="GND" x="210.82" y="149.86" smashed="yes">
+<attribute name="VALUE" x="208.915" y="146.685" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY15" gate="+5V" x="210.82" y="157.48" smashed="yes">
-<attribute name="VALUE" x="208.915" y="160.655" size="1.778" layer="96"/>
+<instance part="SUPPLY15" gate="+5V" x="210.82" y="162.56" smashed="yes">
+<attribute name="VALUE" x="208.915" y="165.735" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY16" gate="+12V" x="132.08" y="160.02" smashed="yes">
 <attribute name="VALUE" x="129.54" y="163.195" size="1.778" layer="96"/>
@@ -10643,12 +10650,12 @@ for on-board reset</text>
 <instance part="SUPPLY24" gate="+5V" x="172.72" y="73.66" smashed="yes">
 <attribute name="VALUE" x="170.815" y="76.835" size="1.778" layer="96"/>
 </instance>
-<instance part="JP2" gate="A" x="111.76" y="45.72" smashed="yes" rot="R270">
-<attribute name="NAME" x="111.76" y="46.99" size="1.778" layer="95"/>
-<attribute name="VALUE" x="111.76" y="40.005" size="1.778" layer="96"/>
+<instance part="JP2" gate="A" x="121.92" y="45.72" smashed="yes" rot="R270">
+<attribute name="NAME" x="121.92" y="46.99" size="1.778" layer="95"/>
+<attribute name="VALUE" x="121.92" y="40.005" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY25" gate="GND" x="106.68" y="38.1" smashed="yes">
-<attribute name="VALUE" x="104.775" y="34.925" size="1.778" layer="96"/>
+<instance part="SUPPLY25" gate="GND" x="119.38" y="35.56" smashed="yes">
+<attribute name="VALUE" x="117.475" y="32.385" size="1.778" layer="96"/>
 </instance>
 <instance part="C6" gate="G$1" x="73.66" y="147.32" smashed="yes">
 <attribute name="NAME" x="74.676" y="147.955" size="1.778" layer="95"/>
@@ -10671,6 +10678,21 @@ for on-board reset</text>
 <instance part="SUPPLY6" gate="+12V" x="27.94" y="116.84" smashed="yes">
 <attribute name="VALUE" x="25.4" y="120.015" size="1.778" layer="96"/>
 </instance>
+<instance part="C7" gate="G$1" x="25.4" y="147.32" smashed="yes">
+<attribute name="NAME" x="26.416" y="147.955" size="1.778" layer="95"/>
+<attribute name="VALUE" x="26.416" y="143.129" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY28" gate="GND" x="25.4" y="134.62" smashed="yes">
+<attribute name="VALUE" x="23.495" y="131.445" size="1.778" layer="96"/>
+</instance>
+<instance part="C8" gate="G$1" x="17.78" y="147.32" smashed="yes">
+<attribute name="NAME" x="18.796" y="147.955" size="1.778" layer="95"/>
+<attribute name="VALUE" x="18.796" y="143.129" size="1.778" layer="96"/>
+</instance>
+<instance part="C9" gate="G$1" x="111.76" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="111.125" y="41.656" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="115.951" y="34.036" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10678,8 +10700,8 @@ for on-board reset</text>
 <net name="M+" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="231.14" y1="121.92" x2="220.98" y2="121.92" width="0.1524" layer="91"/>
-<label x="220.98" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="231.14" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
+<label x="220.98" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
@@ -10690,8 +10712,8 @@ for on-board reset</text>
 <net name="M-" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
-<wire x1="231.14" y1="119.38" x2="220.98" y2="119.38" width="0.1524" layer="91"/>
-<label x="220.98" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="231.14" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
+<label x="220.98" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
@@ -10702,8 +10724,8 @@ for on-board reset</text>
 <net name="ENC_A" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="5"/>
-<wire x1="231.14" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
-<label x="220.98" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="231.14" y1="106.68" x2="220.98" y2="106.68" width="0.1524" layer="91"/>
+<label x="220.98" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="(PCINT5/OC1B/MISO/DO/ADC5)PA5"/>
@@ -10714,8 +10736,8 @@ for on-board reset</text>
 <net name="ENC_B" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="6"/>
-<wire x1="231.14" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91"/>
-<label x="220.98" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="231.14" y1="104.14" x2="220.98" y2="104.14" width="0.1524" layer="91"/>
+<label x="220.98" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="(PCINT3/T0/ADC3)PA3"/>
@@ -10726,10 +10748,10 @@ for on-board reset</text>
 <net name="+5V" class="0">
 <segment>
 <pinref part="SUPPLY1" gate="+5V" pin="+5V"/>
-<wire x1="205.74" y1="121.92" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="116.84" x2="205.74" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="3"/>
-<wire x1="231.14" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
@@ -10758,10 +10780,10 @@ for on-board reset</text>
 </segment>
 <segment>
 <pinref part="J3" gate="J$1" pin="1"/>
-<wire x1="223.52" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="152.4" x2="210.82" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="157.48" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="157.48" x2="210.82" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="SUPPLY15" gate="+5V" pin="+5V"/>
-<wire x1="210.82" y1="152.4" x2="210.82" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="157.48" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY24" gate="+5V" pin="+5V"/>
@@ -10777,10 +10799,10 @@ for on-board reset</text>
 <net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="205.74" y1="111.76" x2="205.74" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="106.68" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="4"/>
-<wire x1="231.14" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -10837,10 +10859,10 @@ for on-board reset</text>
 </segment>
 <segment>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
-<wire x1="210.82" y1="147.32" x2="210.82" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="152.4" x2="210.82" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="J3" gate="J$1" pin="2"/>
-<wire x1="223.52" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="154.94" x2="220.98" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="154.94" x2="220.98" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -10878,14 +10900,27 @@ for on-board reset</text>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="2"/>
-<wire x1="109.22" y1="43.18" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="43.18" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="43.18" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="40.64" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="40.64" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
+<junction x="119.38" y="40.64"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="142.24" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="SUPPLY26" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="142.24" x2="25.4" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="SUPPLY28" gate="GND" pin="GND"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="139.7" x2="25.4" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="142.24" x2="17.78" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="139.7" x2="25.4" y2="139.7" width="0.1524" layer="91"/>
+<junction x="25.4" y="139.7"/>
 </segment>
 </net>
 <net name="ILIM" class="0">
@@ -10906,6 +10941,13 @@ for on-board reset</text>
 <wire x1="35.56" y1="147.32" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="147.32" x2="33.02" y2="152.4" width="0.1524" layer="91"/>
 <junction x="33.02" y="152.4"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="149.86" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="152.4" x2="33.02" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="149.86" x2="17.78" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="152.4" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
+<junction x="25.4" y="152.4"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -10989,8 +11031,8 @@ for on-board reset</text>
 <net name="ZERO" class="0">
 <segment>
 <pinref part="J3" gate="J$1" pin="3"/>
-<wire x1="223.52" y1="147.32" x2="220.98" y2="147.32" width="0.1524" layer="91"/>
-<label x="220.98" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="223.52" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
+<label x="220.98" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="(PCINT2/AIN1/ADC2)PA2"/>
@@ -11066,9 +11108,14 @@ for on-board reset</text>
 <pinref part="JP2" gate="A" pin="1"/>
 <wire x1="88.9" y1="45.72" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="45.72" x2="109.22" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="48.26" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
 <junction x="99.06" y="45.72"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="40.64" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="40.64" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<junction x="106.68" y="45.72"/>
 </segment>
 </net>
 <net name="12V_FUSE" class="0">
